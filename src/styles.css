@@ -1,0 +1,18 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+	margin: 0;
+	background-color: #eaebef;
+}
+
+button:focus {
+	outline: none;
+}
+
+.mat-divider.mat-divider-vertical {
+	height: 22px; /* A vertical divider should have a height to appear */
+}
+
+.mat-icon {
+	color: #1d2a45; /* No notifications */
+}

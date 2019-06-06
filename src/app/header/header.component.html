@@ -1,0 +1,52 @@
+<div class="header-toolbar">
+  <mat-toolbar color="primary">
+    <img routerLink="/" class="facebook-logo" [src]="getFacebookLogo()" />
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+
+    <div class="header__menu-wrapper">
+      <button class="app-button" (click)="drawer.toggle()" mat-button><mat-icon class="menu-toggle-icon">menu</mat-icon></button>
+
+      <mat-drawer #drawer class="example-sidenav" mode="side">
+        <button class="app-button" (click)="drawer.toggle()" mat-button><mat-icon class="menu-toggle-icon">close</mat-icon></button>
+        <button routerLink="/profile" class="app-button" mat-button><img class="my-profile-picture" [src]="getUserPicture()" />Eslam</button>
+        <mat-divider></mat-divider>
+        <button routerLink="/" class="app-button" mat-button>Home</button>
+        <mat-divider></mat-divider>
+        <button routerLink="/find-friends" class="app-button" mat-button>Find Friends</button>
+      </mat-drawer>
+    </div>
+
+    <div class="header__buttons-wrapper">
+      <button routerLink="/profile" class="app-button" mat-button><img class="my-profile-picture" [src]="getUserPicture()">Eslam</button>
+      <button routerLink="/" class="app-button" mat-button>Home</button>
+      <button routerLink="/find-friends" class="app-button" mat-button>Find Friends</button>
+
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <button class="app-button" mat-button [matMenuTriggerFor]="person"><mat-icon>person</mat-icon></button>
+      <mat-menu #person="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+
+      <button class="app-button" mat-button [matMenuTriggerFor]="forum"><mat-icon>forum</mat-icon></button>
+      <mat-menu #forum="matMenu">
+        <button mat-menu-item>Item 3</button>
+        <button mat-menu-item>Item 4</button>
+      </mat-menu>
+
+      <button class="app-button" mat-button [matMenuTriggerFor]="notifications"><mat-icon>notifications</mat-icon></button>
+      <mat-menu #notifications="matMenu">
+        <button mat-menu-item>Item 4</button>
+        <button mat-menu-item>Item 5</button>
+      </mat-menu>
+
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <button class="app-button" mat-button><mat-icon>info</mat-icon></button>
+      <button class="app-button" mat-button><mat-icon>arrow_drop_down</mat-icon></button>
+    </div>
+  </mat-toolbar>
+</div>

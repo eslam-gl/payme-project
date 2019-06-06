@@ -1,0 +1,23 @@
+<div class="write-post">
+	<mat-card>
+		<button (click)="switchPostType('text')" class="post-type-button" mat-button><mat-icon>brush</mat-icon> Write Post</button>
+		<button (click)="switchPostType('image/video')" class="post-type-button" mat-button><mat-icon>photo</mat-icon> Photo/Video</button>
+		<button class="post-type-button" mat-button><mat-icon>videocam</mat-icon> Live Video</button>
+		<button class="post-type-button" mat-button><mat-icon>sentiment_satisfied_alt</mat-icon> Feeling</button>
+
+
+		<form class="example-form">
+			<mat-form-field class="example-full-width">
+				<textarea matInput name="postContent" [(ngModel)]="postContent" id="postContent" placeholder="What's on your mind?"></textarea>
+			</mat-form-field>
+			<mat-divider></mat-divider>
+		</form>
+
+		<div *ngIf="currentPostType == 'image/video'">
+				<input (change)="onFileChange($event)" type="file" name="file">
+			</div>
+
+		<button (click)="sharePost()" class="share-button" mat-flat-button>Share</button>
+
+	</mat-card>
+</div>

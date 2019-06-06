@@ -1,0 +1,42 @@
+.write-post {
+	margin-top: 2rem;
+	max-width: 660px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.example-form {
+	margin-top: 12px;
+}
+
+.example-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-form > * {
+  width: 100%;
+}
+
+.example-full-width {
+	margin-top: 22px;
+}
+
+.post-type-button {
+	color: #385898;
+	background-color: #f5f6f7;
+	border-radius: 12rem;
+	margin-bottom: 12px;
+	margin-right: 12px;
+}
+
+.post-type-button:hover {
+	color: #385898;
+	background-color: #ebedf0;
+}
+
+.share-button {
+	margin-top: 12px;
+	background-color: #3f51b5;
+	color: white;
+}

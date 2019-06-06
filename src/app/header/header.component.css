@@ -1,0 +1,65 @@
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.my-profile-picture {
+	border-radius: 12rem;
+	max-height: 30px;
+	margin-right: 6px;
+}
+
+.facebook-logo {
+	max-height: 34px;
+	cursor: pointer;
+}
+
+.facebook-logo:focus, .app-button:focus {
+	outline: none;
+}
+
+.header__buttons-wrapper {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+}
+
+.header__menu-wrapper {
+	display: none;
+}
+
+.menu-toggle-icon {
+	color: white;
+}
+
+.example-sidenav {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	padding-top: 1.2rem;
+	z-index: 1000;
+	background-color: #2a2e40;
+	color: white;
+}
+
+.example-sidenav button {
+	display: block;
+	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+
+@media (max-width: 769px) {
+	.header__buttons-wrapper {
+		display: none;
+	}
+
+	.fill-remaining-space {
+		display: none;
+	}
+
+	.header__menu-wrapper {
+		display: inherit;
+		margin-left: auto;
+	}
+}

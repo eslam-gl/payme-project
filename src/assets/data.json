@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"author": "Abla Fahita",
+		"username": "fahita",
+		"createdAt": 1559520356844,
+		"likes": "16k",
+		"content": "لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم"
+	},
+	{
+		"id": 2,
+		"author": "Mark Zuckerberg",
+		"username": "zuck",
+		"createdAt": 1559020356844,
+		"likes": "77k",
+		"content": "By giving people the power to share, we're making the world more transparent."
+	},
+	{
+		"id": 3,
+		"author": "Steve Jobs",
+		"username": "stevejobs",
+		"createdAt": 1549920356844,
+		"likes": "132k",
+		"content": "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.\n\nIt's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.\n\nSometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.\n\nMy favorite things in life don't cost any money. It's really clear that the most precious resource we all have is time."
+	},
+	{
+		"id": 4,
+		"author": "Jeff Bezos",
+		"username": "bezos",
+		"createdAt": 1549020356844,
+		"likes": "92.6k",
+		"image": "https://source.unsplash.com/800x600",
+		"content": "If you do build a great experience, customers tell each other about that. Word of mouth is very powerful."
+	},
+	{
+		"id": 5,
+		"author": "Eslam Ahmed",
+		"username": "eslam",
+		"createdAt": 1539720356844,
+		"likes": "46",
+		"image": "https://source.unsplash.com/900x700",
+		"content": "I shared this post for testing purposes. That's it."
+	}
+]

@@ -1,0 +1,34 @@
+<div class="single-post">
+	<mat-card>
+		<img class="single-post__image" [src]="getProfilePicture(post.username)" />
+		<a mat-button class="single-post__author">{{ post.author }}</a>
+
+		<div class="single-post__date-wrapper">
+			<p class="single-post__date">{{ post.createdAt | date:'medium' }} · <mat-icon class="public-icon">public</mat-icon></p>
+		</div>
+		<mat-card-content class="single-post__content">
+			{{ post.content }}
+			<img class="single-post__image-video" *ngIf="post.image" [src]="post.image" />
+		</mat-card-content>
+
+		<div class="likes-area">
+			<img class="like-icon" [src]="getLikeIcon()" />
+			<p class="single-post__likes">{{ post.likes }} likes</p>
+		</div>
+
+		<mat-divider></mat-divider>
+
+		<div class="buttons">
+			<button class="app-button" mat-button>
+				<mat-icon>thumb_up_alt</mat-icon>
+			</button>
+			<button class="app-button" mat-button>
+				<mat-icon>chat_bubble_outline</mat-icon>
+			</button>
+			<button class="app-button" mat-button>
+				<mat-icon>reply</mat-icon>
+			</button>
+		</div>
+
+	</mat-card>
+</div>
